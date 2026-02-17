@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Tech | Arquitectura de eficiencia en Salud</title>
+    <meta name="description" content="Diseñamos ecosistemas de automatización inteligente (RPA + IA) especializados en el ciclo de ingresos (RCM) para centros de salud. Automatiza lo complejo.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+    <!-- Particles Container -->
+    <div id="particles-container"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Care Tech Logo" class="logo-img">
+                <span class="logo-text">Care Tech</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#tecnologia" class="nav-link">Tecnología</a>
+                <a href="#casos" class="nav-link">Casos de Éxito</a>
+                <a href="#contacto" class="btn-primary nav-cta">Agendar Demo</a>
+            </div>
+
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <a href="#servicios" class="mobile-link">Servicios</a>
+        <a href="#tecnologia" class="mobile-link">Tecnología</a>
+        <a href="#casos" class="mobile-link">Casos de Éxito</a>
+        <a href="#contacto" class="btn-primary mobile-cta">Agendar Demo</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-label glow-text">⚡ Automatización Clínica Inteligente</span>
+                <h1 class="hero-title">
+                    Arquitectura de <span class="gradient-text">Eficiencia</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Automatizamos lo complejo para que tú domines lo estratégico. Ecosistemas RPA + IA integrados nativamente con Athenahealth y DrChrono.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contacto" class="btn-primary glow-primary">Recuperar Costos (-40%)</a>
+                    <a href="#demo" class="btn-outline">Ver Demo Interactiva</a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="40">0</span><span class="stat-symbol">%</span>
+                        <p class="stat-label">Ahorro Op.</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="99">0</span><span class="stat-symbol">.9%</span>
+                        <p class="stat-label">Precisión IA</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="24">0</span><span class="stat-symbol">/7</span>
+                        <p class="stat-label">Procesamiento</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="sphere-container">
+                    <img src="images/hero_visual.png" alt="Care Tech AI Sphere" class="sphere animated-element">
+                    <div class="orbital-ring"></div>
+                    <div class="orbital-ring horizontal"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <p class="section-label-center">INTEGRACIONES NATIVAS CON LÍDERES DEL MERCADO</p>
+            <div class="partners-grid">
+                <div class="partner-logo">Athenahealth</div>
+                <div class="partner-logo">DrChrono</div>
+                <div class="partner-logo">Epic Systems</div>
+                <div class="partner-logo">Cerner</div>
+                <div class="partner-logo">Allscripts</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Soluciones <span class="gradient-text">RCM 4.0</span></h2>
+                <p class="section-desc">Eliminamos la fricción burocrática y el error humano en cada etapa del ciclo de ingresos.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_1.png" alt="Optimización RCM" class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">Optimización RCM</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Optimización RCM</h3>
+                            <p class="service-description">Automatización del ciclo de facturación para reducir denegaciones de seguros y acelerar el cobro.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Billing</span>
+                                <span class="feature-tag">Claims</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_2.png" alt="Integración API" class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">Integración API</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Integración API</h3>
+                            <p class="service-description">Sincronización fluida de datos clínicos y financieros mediante APIs abiertas con Athenahealth/DrChrono.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Real-time</span>
+                                <span class="feature-tag">Secure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_3.png" alt="Gestión Inteligente de Glosas" class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">Gestión de Glosas AA</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Gestión de Glosas</h3>
+                            <p class="service-description">Bots que detectan y corrigen errores en reclamaciones automáticamente antes de ser enviadas.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Auto-fix</span>
+                                <span class="feature-tag">Compliance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_4.png" alt="Elegibilidad 24/7" class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">Elegibilidad 24/7</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Elegibilidad 24/7</h3>
+                            <p class="service-description">Verificación instantánea de cobertura de pacientes antes de la consulta para evitar rechazos.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Instant</span>
+                                <span class="feature-tag">Coverage</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_5.png" alt="OCR Médico Avanzado" class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">OCR Médico</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">OCR Médico</h3>
+                            <p class="service-description">Digitalización de documentos físicos y órdenes médicas con Vision AI de alta precisión.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Vision AI</span>
+                                <span class="feature-tag">Digitization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_6.png" alt="Analytics de Flujo de Caja" class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">Analytics Cashflow</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Analytics Cashflow</h3>
+                            <p class="service-description">Dashboards en tiempo real para proyectar ingresos y tiempos de pago de aseguradoras.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Dashboard</span>
+                                <span class="feature-tag">Predictive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech/Showcase Section -->
+    <section id="tecnologia" class="section showcase">
+        <div class="container">
+            <div class="showcase-layout">
+                <div class="showcase-content">
+                    <h2 class="section-title">DrChrono + Athenahealth <br><span class="gradient-text">Hyper-Sync</span></h2>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-text">
+                                <h3>Sincronización Bidireccional</h3>
+                                <p>Tus datos siempre actualizados en tiempo real entre sistemas.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🔒</div>
+                            <div class="feature-text">
+                                <h3>Seguridad HIPAA/GDPR</h3>
+                                <p>Encriptación de grado militar para datos sensibles de pacientes.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🤖</div>
+                            <div class="feature-text">
+                                <h3>Bots de Glosa Automática</h3>
+                                <p>Nuestra IA aprende de los rechazos pasados para prevenir los futuros.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-visual glass-card glow-primary">
+                    <img src="images/hero_visual.png" alt="Dashboard Interface" class="dashboard-preview">
+                    
+                    <!-- Floating Stats Cards -->
+                    <div class="floating-card stat-card-1 glass-card">
+                        <span class="label">Tasa de Aprobación</span>
+                        <div class="value text-success">98.5%</div>
+                        <div class="trend text-success">↑ 12% vs mes anterior</div>
+                    </div>
+                    
+                    <div class="floating-card stat-card-2 glass-card">
+                        <span class="label">Tiempo de Pago</span>
+                        <div class="value text-accent">14 Días</div>
+                        <div class="trend text-accent">↓ 25 días promedio</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="casos" class="section testimonials">
+        <div class="container">
+            <h2 class="section-title text-center">Resultados Clínicos</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">"Redujimos nuestro tiempo de cobro de 45 a 15 días en el primer trimestre. La integración con DrChrono fue totalmente transparente."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar bg-gradient">JD</div>
+                        <div class="author-info">
+                            <h4>Dr. James Davis</h4>
+                            <p>Director Médico, Metro Health</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">"La detección automática de errores de elegibilidad nos ha ahorrado miles de dólares en rechazos. Es como tener un equipo de facturación extra."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar bg-gradient">SAR</div>
+                        <div class="author-info">
+                            <h4>Sarah Rodriguez</h4>
+                            <p>CFO, Trauma Center West</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About/CTA Section -->
+    <section id="contacto" class="section cta-section">
+        <div class="container">
+            <div class="cta-box glass-card glow-primary">
+                <div class="cta-content">
+                    <h2 class="cta-title">¿Listo para recuperar el control de tu flujo de caja?</h2>
+                    <p class="cta-subtitle">Descubre cuánto dinero estás dejando en la mesa por ineficiencias operativas.</p>
+                    <div class="cta-buttons">
+                        <button class="btn-primary btn-lg pulse-animation">Solicitar Auditoría Gratuita</button>
+                        <button class="btn-outline btn-lg">Hablar con un Experto</button>
+                    </div>
+                    <p class="cta-footer-text">Sin compromiso. Cumplimiento HIPAA garantizado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo" class="logo-sm">
+                    <span>Care Tech</span>
+                </div>
+                <p>Arquitectura de eficiencia para el sector salud. Automatizando el futuro del RCM.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn">LN</a>
+                    <a href="#" aria-label="Twitter">TW</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Soluciones</h4>
+                <a href="#">RCM Automation</a>
+                <a href="#">Medical Coding AI</a>
+                <a href="#">Patient Eligibility</a>
+                <a href="#">Analytics</a>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <a href="#">Sobre Nosotros</a>
+                <a href="#">Carreras</a>
+                <a href="#">Partners</a>
+                <a href="#">Seguridad & Privacidad</a>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <a href="mailto:hola@caretech.com">hola@caretech.com</a>
+                <p>+1 (555) 123-4567</p>
+                <p>Miami, FL</p>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Care Tech. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
