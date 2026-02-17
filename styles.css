@@ -142,10 +142,18 @@ p {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.glass-card:hover {
+/* Fix: Only apply hover transform to cards that aren't service flip-backs */
+.glass-card:hover:not(.service-card-back) {
     border-color: rgba(var(--primary-rgb), 0.35);
     box-shadow: 0 25px 50px -12px rgba(var(--primary-rgb), 0.3);
     transform: translateY(-4px);
+}
+
+/* Service card back specific hover to preserve rotation */
+.service-card-back.glass-card:hover {
+    border-color: rgba(var(--primary-rgb), 0.35);
+    box-shadow: 0 25px 50px -12px rgba(var(--primary-rgb), 0.3);
+    transform: rotateY(180deg) translateY(-4px);
 }
 
 /* --- Particles --- */
@@ -498,12 +506,15 @@ p {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     border-radius: 24px;
     overflow: hidden;
 }
 
 .service-card-front {
     background: var(--bg-tertiary);
+    z-index: 2;
+    transform: rotateY(0deg);
 }
 
 .service-image {
@@ -520,6 +531,7 @@ p {
     width: 100%;
     padding: 30px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    z-index: 3;
 }
 
 .service-title-front {

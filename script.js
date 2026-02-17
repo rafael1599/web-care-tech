@@ -124,8 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Apply to sections and cards
-    document.querySelectorAll('section, .service-card-flip, .glass-card').forEach(el => {
+    // Apply to sections and primary containers
+    document.querySelectorAll('section, .service-card-flip').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
         el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
