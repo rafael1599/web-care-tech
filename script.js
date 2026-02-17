@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menuToggle.addEventListener('click', () => {
         isMenuOpen = !isMenuOpen;
         mobileMenu.classList.toggle('active');
+        menuToggle.setAttribute('aria-expanded', isMenuOpen);
         
         // Hamburguer animation
         const spans = menuToggle.querySelectorAll('span');
